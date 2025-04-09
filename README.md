@@ -58,3 +58,23 @@ Add .env to your .gitignore:
 
 echo ".env" >> .gitignore
 ```
+
+## Running the client
+```bash
+$ python3 mcp_client.py /content/mcp_server.py
+
+Connected to server with tools: ['add', 'multiply']
+
+MCP Client Started!
+Type your queries or 'quit' to exit.
+
+Query: how's going today?
+
+I'm just a computer program, so I don't have feelings, but I'm here and ready to help you with whatever you need! How can I assist you today?
+
+Query: let's do math: (5 + 3) * 2
+
+[Calling tool add with args {'a': 5, 'b': 3}]
+[Calling tool multiply with args {'a': 8, 'b': 2}]
+The result of \((5 + 3) * 2\) is 16.
+```
